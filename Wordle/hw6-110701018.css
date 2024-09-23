@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0%;
+}
+
+#board {
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 寬度不夠換下一行 */
+}
+
+.tile {
+    /* box */
+    border: 2px solid lightgray;
+    width: 50px;
+    height: 50px;
+    margin: 2.5px;
+
+    /* text */
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct {
+    background-color: #538d4e;
+    color: white;
+    /* border: 2px solid white; */
+}
+
+.present {
+    background-color: #b59f3b;
+    color: white;
+    /* border: 2px solid white; */
+}
+
+.absent {
+    background-color: #3a3a3c;
+    color: white;
+    /* border: 2px solid white; */
+}
+
+#keyboardArea {
+    width: 550px;
+    height: 135x;
+    margin: 0 auto;
+}
+
+.keyboard-row {
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.key-tile {
+    /* box */
+    border: 1px solid lightgray;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:active {
+    background-color: lightgray;
+}
+
+
+.Enter-key-tile {
+    /* box */
+    border: 1px solid lightgray;
+    width: 76px;
+    height: 40px;
+    margin: 2px;
+
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Backspace-key-tile {
+    /* box */
+    border: 1px solid lightgray;
+    width: 76px;
+    height: 40px;
+    margin: 2px;
+
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f7fa;
+    gap: 20px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-container {
+    /* 保持原有的样式 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+#game-instructions {
+    border: solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-instructions>h2,
+#game-instructions>p {
+    font-size: medium;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
+}
+
+#game-instructions>h2 {
+    font-size: large;
+}
+
+.overlay,
+.game-over-container,
+.start-game-container,
+.next-level-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 520px;
+    height: 550px;
+    /* position: relative; */
+}
+
+.overlay {
+    background-color: #ffffff;
+    z-index: 1;
+    display: none;
+}
+
+.start-game-container,
+.game-over-container,
+.next-level-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    display: none;
+    color: #f0f0f0;
+}
+
+.game-over-container,
+.next-level-container {
+    position: absolute;
+}
+
+.start-game-container {
+    display: flex;
+}
+
+.header {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#myCanvas {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+#reset-button,
+#restart-button {
+    margin-bottom: 0px;
+}
+
+#restart-button {
+    margin-left: 80px;
+}
+
+h1 {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 280px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.sidebar>h2,
+.sidebar>p,
+.sidebar>div {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
+}
+
+#HardDegree {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sidebar>h2 {
+    font-size: large;
+}
+
+.picture {
+    height: 30px;
+    width: 30px;
+}
+
+
+.one {
+    align-items: center;
+}
+
+#heart,
+#sound-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sound-button>.picture {
+    margin: 10px;
+}
+
+.degreebutton {
+    background-color: rgb(242, 242, 29);
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.degreebutton:hover {
+    background-color: rgb(202, 202, 55);
+}
+
+.degreebutton.green {
+    background-color: #00796b;
+    color: white;
+}

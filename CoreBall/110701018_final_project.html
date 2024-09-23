@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Coreball</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <script src="110701018_final_project.js" defer></script>
+    <link rel="stylesheet" href="110701018_final_project.css">
+</head>
+
+<body>
+    <div class="sidebar one">
+        <h2>選擇難度</h2>
+        <div id="HardDegree">
+            <button id="button1" class="degreebutton green" onclick="toggleColor('button1')">簡單</button>
+            <button id="button2" class="degreebutton" onclick="toggleColor('button2')">中等</button>
+            <button id="button3" class="degreebutton" onclick="toggleColor('button3')">困難</button>
+        </div>
+        <h2>聲音控制</h2>
+        <div id="sound-button">
+            <img class="picture" id="sound" src="./material/soundEffect_on.png" />
+            <img class="picture" id="BGM" src="./material/BGM_on.png" />
+        </div>
+    </div>
+
+    <div class="content-container">
+        <!-- 開始頁面 -->
+        <div class="start-game-container">
+            <h1 id="start-game-h1">Coreball</h1>
+            <div id="game-instructions">
+                <h2>基本遊戲規則</h2>
+                <p>藉由左側選擇遊戲困難程度</p>
+                <p>按下"Start game"按鈕將可以進行遊戲</p>
+                <p>點擊畫布或者使用空白鍵將可以射出小球</p>
+                <p>結束遊戲：小球擊中大球上面其他小球</p>
+                <p>關卡通關條件：沒有小球接觸到大球上的小球</p>
+                <p>遊戲勝利條件：所有關卡皆通關</p>
+            </div>
+            <button id="start-game-button">Start game</button>
+        </div>
+
+        <!-- 遊戲介面 -->
+        <div class="overlay">
+            <div class="header">
+                <h2 id="HowLevel">第1關</h2>
+                <button id="restart-button">Restart game</button>
+                <button id="reset-button">Reset game</button>
+            </div>
+            <canvas id="myCanvas" width="480" height="490"></canvas>
+        </div>
+
+        <!-- 遊戲結束的頁面 -->
+        <div class="game-over-container">
+            <h1 id="game-over-h1">Game Over</h1>
+            <button id="game-over-button">Restart</button>
+            <button id="use-heart-button">Use Heart</button>
+        </div>
+
+        <!-- 前往下一關的過度頁面 -->
+        <div class="next-level-container">
+            <h1 id="next-level-h1"> You Win !! </h1>
+            <button id="next-level-button">Next Level</button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h2>按鈕解說</h2>
+        <p>"Start game" 開始遊戲</p>
+        <p>"Restart game" 重新開始遊戲</p>
+        <p>"Reset game 該關卡重新開始"</p>
+        <p>"Next Level" 前往下一關</p>
+        <p>"Use Heart" 使用生命點重啟這一關</p>
+        <div>
+            <img class="picture" src="./material/flex.png" />
+            <p>粉色表示有重新開始機會，總共5次</p>
+        </div>
+        <div>
+            <img class="picture" src="./material/none.png" />
+            <p>空心表示已用掉</p>
+        </div>
+        <br>
+
+        <h2>重啟機會</h2>
+        <div id="heart">
+            <img class="picture" src="./material/flex.png" />
+            <img class="picture" src="./material/flex.png" />
+            <img class="picture" src="./material/flex.png" />
+            <img class="picture" src="./material/flex.png" />
+            <img class="picture" src="./material/flex.png" />
+        </div>
+    </div>
+
+</body>
+
+</html>
