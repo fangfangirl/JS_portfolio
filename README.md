@@ -8,4 +8,4 @@
 
 請點擊上面的鏈接來訪問相應的頁面。
 
-或者你可以在 "Introduction Me" 頁面中，您可以找到一個 Portfolio 按鈕，通過點擊這個按鈕，您將能夠輕鬆進入其他頁面，如 Core Ball 和 Wordle 頁面。
+或者你可以在 "Introduction Me" 頁面中，您可以找到一個 Portfolio 按鈕，選擇進入其他頁面，如 Core Ball 和 Wordle 頁面。
